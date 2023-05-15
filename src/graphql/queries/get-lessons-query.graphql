@@ -1,0 +1,9 @@
+  query GetLessons {
+        lessons(orderBy: updatedAt_ASC, stage: PUBLISHED) {
+            id
+            lessonType
+            availableAt
+            title
+            slug
+        }
+    }
